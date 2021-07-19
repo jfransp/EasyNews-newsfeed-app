@@ -5,13 +5,13 @@ and navigation components, following Material Design guidelines, an MVVM archite
 The app utilizes a custom toolbar, with action buttons according to the screen. It also features a side navigation drawer, allowing the user to navigate to several
 of the news sources offered by the NewsApi.org free plan access as well as setting configurations for country and category through a custom settings screen.
 
-The main app environment has a bottom navigation view, allowing the user to navigate in the app main environment, between a breaking news screen, a screen with
+The main app environment has a bottom navigation view, allowing the user to navigate between a breaking news screen, a screen with
 articles saved by the user and a search screen that allows the user to search through the api's offered sources by both language and sort order. The article screen
-allows the user to read the article on a web view and also navigate to the source's website. The saved articles screen feature a swipe to delete function with a timed "undo" pop up option.
+allows the user to read the article on a web view and also navigate to the source's website. The saved articles screen features a swipe to delete function with a timed "undo" pop up option.
 
 Some extra implementations: error messages/handling, load state listeners, recyclerviews (with both rvadapters, listdapters and paging adapters), safe args, custom adapters for navigation and preference setting, web view, share function, custom xml shapes and drawables and more.
 
-Here you can check out a short demosntration video: https://www.youtube.com/watch?v=QPwg-CprzHk
+Here you can check out a short demonstration video: https://www.youtube.com/watch?v=QPwg-CprzHk
 
 If you wish to try the app for yourself, just remember to get a free API key at newsapi.org and set it at the data/api/apikey.kt file variable.
 # Architecture
