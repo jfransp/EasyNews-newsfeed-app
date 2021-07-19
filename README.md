@@ -9,8 +9,7 @@ The main app environment has a bottom navigation view, allowing the user to navi
 articles saved by the user and a search screen that allows the user to search through the api's offered sources by both language and sort order. The article screen
 allows the user to read the article on a web view and also navigate to the source's website.
 
-Some extra implementations: error messages/handling, load state listeners, recyclerviews (with both rvadapters, listdapters and paging adapters), safe args, custom adapters
-for navigation and preference setting, web view, share function, custom xml shapes and drawables and more.
+Some extra implementations: error messages/handling, load state listeners, swipe to delete function at the saved articles screen (with undo pop up), recyclerviews (with both rvadapters, listdapters and paging adapters), safe args, custom adapters for navigation and preference setting, web view, share function, custom xml shapes and drawables and more.
 
 Here you can check out a short demosntration video: https://www.youtube.com/watch?v=QPwg-CprzHk
 # Architecture
