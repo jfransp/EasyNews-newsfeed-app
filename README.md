@@ -15,7 +15,10 @@ for navigation and preference setting, web view, share function, custom xml shap
 Here you can check out a short demosntration video: https://www.youtube.com/watch?v=QPwg-CprzHk
 # Architecture
 <img src="https://raw.githubusercontent.com/jfransp/EasyNews-newsfeed-app/master/Flowchart%20Template.jpg" width="500" height="500" />
-# Credits
+
+
+
+Credits:
 Icons by Gregor Cresnar (www.flaticon.com/authors/gregor-cresnar)
 
 Some ideas I've learned from Florian Walther, Phillip Lackner and Ryan M. Kay
