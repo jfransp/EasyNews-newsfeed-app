@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/all_sources_button_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/all_sources_button"
+            android:icon="@drawable/icon_sources"
+            android:title="Sources" />
+
+    </group>
+
+    <item
+        android:id="@+id/settings_button"
+        android:icon="@drawable/icon_settings"
+        android:title="Settings" />
+
+    <item android:title="Main International Sources">
+        <menu>
+            <group
+                android:id="@+id/main_sources"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/abc_news"
+                    android:title="ABC News" />
+
+                <item
+                    android:id="@+id/al_jazeera"
+                    android:title="Al Jazeera" />
+
+                <item
+                    android:id="@+id/breitbart"
+                    android:title="Breitbart" />
+
+                <item
+                    android:id="@+id/bloomberg"
+                    android:title="Bloomberg" />
+
+                <item
+                    android:id="@+id/buzzfeed"
+                    android:title="Buzzfeed" />
+
+                <item
+                    android:id="@+id/cbc_news"
+                    android:title="CBC News" />
+
+                <item
+                    android:id="@+id/cbs_news"
+                    android:title="CBS News" />
+
+                <item
+                    android:id="@+id/cnn"
+                    android:title="CNN" />
+
+                <item
+                    android:id="@+id/financial_post"
+                    android:title="Financial Post" />
+
+                <item
+                    android:id="@+id/fox_news"
+                    android:title="Fox News" />
+
+                <item
+                    android:id="@+id/independent"
+                    android:title="Independent" />
+
+                <item
+                    android:id="@+id/msnbc"
+                    android:title="MSNBC" />
+
+                <item
+                    android:id="@+id/nbc_news"
+                    android:title="NBC News" />
+
+                <item
+                    android:id="@+id/newsweek"
+                    android:title="Newsweek" />
+
+                <item
+                    android:id="@+id/politico"
+                    android:title="Politico" />
+
+                <item
+                    android:id="@+id/reuters"
+                    android:title="Reuters" />
+
+                <item
+                    android:id="@+id/rt"
+                    android:title="RT" />
+
+                <item
+                    android:id="@+id/the_hill"
+                    android:title="The Hill" />
+
+                <item
+                    android:id="@+id/the_washington_post"
+                    android:title="The Washington Post" />
+
+                <item
+                    android:id="@+id/time"
+                    android:title="Time" />
+
+                <item
+                    android:id="@+id/vice_news"
+                    android:title="Vice News" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

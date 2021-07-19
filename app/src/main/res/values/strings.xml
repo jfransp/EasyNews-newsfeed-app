@@ -1,0 +1,74 @@
+<resources>
+
+    <!--General app string resources-->
+    <string name="app_name">EasyNews</string>
+    <string name="search_button">Search</string>
+    <string name="saved_articles_button_text">Saved Articles</string>
+    <string name="breaking_news_button">Breaking News</string>
+    <string name="search_box_hint_text">search terms</string>
+    <string name="search_box_from_text">From:</string>
+    <string name="search_box_to_text">To:</string>
+    <string name="search_box_language_text">Language:</string>
+    <string name="sort_by_text">Sort by:</string>
+    <string name="search_button_text">Search</string>
+    <string name="empty_search_query_message">You must search for something to get a result!</string>
+    <string name="retry_button_text">Retry</string>
+    <string name="loading_error_message">Error loading results, check internet connection.</string>
+    <string name="save_article_button_title">Save Article</string>
+    <string name="share_article_button_title">Share Article</string>
+    <string name="on_open_drawer_text">Open drawer</string>
+    <string name="on_close_drawer_text">Close drawer</string>
+    <string name="navigate_to_webpage_title">Go to webpage</string>
+    <string name="country_settings_text">Country</string>
+    <string name="category_settings_text">Category</string>
+
+    <!--Strings resources for settings screens-->
+    <string name="us_text">United States of America</string>
+    <string name="ru_text">Russia</string>
+    <string name="br_text">Brazil</string>
+    <string name="de_text">Germany</string>
+    <string name="au_text">Australia</string>
+    <string name="ca_text">Canada</string>
+    <string name="in_text">India</string>
+    <string name="it_text">Italy</string>
+    <string name="fr_text">France</string>
+    <string name="ch_text">China</string>
+    <string name="sp_text">Spain</string>
+    <string name="settings_explanation_text">Your preferences will affect both your breaking news feed and your sources listing when you click on the All our sources button at the side menu.</string>
+    <string name="settings_category_description">Select the category in which you would like to receive your news:</string>
+    <string name="settings_country_description_text">Select the country you would like to get your news from:</string>
+    <string name="settings_general">General</string>
+    <string name="settings_business">Business</string>
+    <string name="settings_entertainment">Entertainment</string>
+    <string name="settings_health">Health</string>
+    <string name="settings_science">Science</string>
+    <string name="settings_sports">Sports</string>
+    <string name="settings_technology">Technology</string>
+    <string name="gb_text">United Kingdom</string>
+
+    <!--Country names for languages spinner on the search news screen-->
+    <string-array name="request_languages">
+        <item>English</item>
+        <item>Portuguese</item>
+        <item>French</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+        <item>Dutch</item>
+        <item>German</item>
+        <item>Northern Sami</item>
+        <item>Chinese</item>
+        <item>Arabic</item>
+        <item>Hebrew</item>
+        <item>Norwegian</item>
+        <item>ud</item>
+    </string-array>
+
+    <!--Sort by spinner string resource for search screen-->
+    <string-array name="request_sort_by">
+        <item>Relevancy</item>
+        <item>Popularity</item>
+        <item>Most recent</item>
+    </string-array>
+
+</resources>

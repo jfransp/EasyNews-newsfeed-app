@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsScreenFragment">
+
+    <fragment
+        android:id="@+id/newsScreenFragment"
+        android:name="com.example.newsfeed.ui.breakingnews.BreakingNewsFragment"
+        android:label="Breaking News"
+        tools:layout="@layout/fragment_breaking_news_screen">
+        <action
+            android:id="@+id/action_newsScreenFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.example.newsfeed.ui.savedarticles.SavedArticlesFragment"
+        android:label="Saved Articles"
+        tools:layout="@layout/fragment_saved_news_screen">
+        <action
+            android:id="@+id/action_savedNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchNewsFragment"
+        android:name="com.example.newsfeed.ui.searcharticles.SearchNewsFragment"
+        android:label="Search Articles"
+        tools:layout="@layout/fragment_search_screen">
+        <action
+            android:id="@+id/action_searchNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.newsfeed.ui.articlescreen.ArticleFragment"
+        android:label="ArticleFragment"
+        tools:layout="@layout/fragment_article_screen">
+        <argument
+            android:name="article"
+            app:argType="com.example.newsfeed.data.models.Article" />
+        <argument
+            android:name="sourceName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sourceScreenFragment"
+        android:name="com.example.newsfeed.ui.activitylevelUI.sources.SourceScreenFragment"
+        android:label="SourceScreenFragment"
+        tools:layout="@layout/fragment_source_screen">
+        <argument
+            android:name="sourceId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sourceScreenFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/sourceListScreenFragment"
+        android:name="com.example.newsfeed.ui.activitylevelUI.sources.SourceListFragment"
+        android:label="Sources"
+        tools:layout="@layout/fragment_sourcelist_screen">
+        <action
+            android:id="@+id/action_sourceListScreenFragment_to_sourceScreenFragment"
+            app:destination="@id/sourceScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsScreenFragment"
+        android:name="com.example.newsfeed.ui.activitylevelUI.settings.SettingsScreenFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings_screen">
+        <action
+            android:id="@+id/action_settingsScreenFragment_to_countryFragment"
+            app:destination="@id/countryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_settingsScreenFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.example.newsfeed.ui.activitylevelUI.settings.CountryFragment"
+        android:label="Country"
+        tools:layout="@layout/fragment_settings_country_screen" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.newsfeed.ui.activitylevelUI.settings.CategoryFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_settings_category_screen" />
+</navigation>

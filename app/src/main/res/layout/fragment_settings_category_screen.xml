@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/settings_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="15dp"
+                android:text="@string/settings_category_description"
+                android:textColor="@color/app_action_bar_color"
+                android:textSize="15sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_general"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_business"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/entertainment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_entertainment"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/health"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_health"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/science"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_science"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_sports"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/technology"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:buttonTint="@color/app_action_bar_color_secondary"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/settings_technology"
+                    android:textColor="@color/item_headline_text_color"
+                    android:textSize="25sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/settings_explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:text="@string/settings_explanation_text"
+                android:textColor="@color/item_source_date_and_time_text_color"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

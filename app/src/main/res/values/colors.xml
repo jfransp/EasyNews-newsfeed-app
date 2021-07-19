@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_background_color">#ECEDE8</color>
+    <color name="action_menu_icon_color">#78918D</color>
+    <color name="bottom_navigation_icon_color">#2E3836</color>
+    <color name="bottom_navigation_icon_selected_color">#D2DAD8</color>
+    <color name="item_box_background_color">#A5B6B3</color>
+    <color name="search_box_background_color">#D6D9D4</color>
+    <color name="search_box_item_color">#ACB2A9</color>
+    <color name="search_box_edittext_hint_color">#CBCFC9</color>a
+    <color name="search_box_edittext_text_color">#707070</color>
+    <color name="app_action_bar_color">#5F7470</color>
+    <color name="app_action_bar_color_secondary">#536562</color>
+    <color name="item_headline_text_color">#788273</color>
+    <color name="item_textpreview_text_color">#A1A99E</color>
+    <color name="item_source_date_and_time_text_color">#C4C9BA</color>
+    <color name="navigation_menu_background_color">#9AACA9</color>
+    <color name="drawer_background_color">#979F93</color>
+    <color name="drawer_topic_text_color">#6E7769</color>
+    <color name="drawer_item_text_color">#8D9688</color>
+</resources>
