@@ -38,9 +38,10 @@ class SourcesRecyclerViewAdapter(
                 navigateButton.setOnClickListener {
                     val position = bindingAdapterPosition
                     if (position != RecyclerView.NO_POSITION) {
-                        val url = getItem(position).url
-                        listener.navigateButtonClicked(url)
-
+                        val source = getItem(position)
+                        if (source != null) {
+                            listener.navigateButtonClicked(source)
+                        }
                     }
                 }
             }
@@ -55,7 +56,7 @@ class SourcesRecyclerViewAdapter(
 
     interface OnItemClickListener {
         fun sourceItemClicked(source: Source)
-        fun navigateButtonClicked(url: String)
+        fun navigateButtonClicked(source: Source)
     }
 
     class DiffCallback: DiffUtil.ItemCallback<Source>() {
