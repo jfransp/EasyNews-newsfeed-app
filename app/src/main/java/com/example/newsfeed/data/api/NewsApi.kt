@@ -9,7 +9,7 @@ import retrofit2.http.Query
 
 interface NewsApi {
 
-    @Headers("X-Api-Key: $API_KEY")
+    @Headers("X-Api-Key:$API_KEY")
     @GET("/v2/top-headlines")
     suspend fun getBreakingNews(
         @Query("country")
@@ -22,7 +22,7 @@ interface NewsApi {
         category: String?
     ): NewsApiResponse
 
-    @Headers("X-Api-Key: $API_KEY")
+    @Headers("X-Api-Key:$API_KEY")
     @GET("/v2/everything")
     suspend fun getAllNews(
         @Query("sources")
@@ -39,7 +39,7 @@ interface NewsApi {
         sortBy: String?
     ): NewsApiResponse
 
-    @Headers("X-Api-Key: $API_KEY")
+    @Headers("X-Api-Key:$API_KEY")
     @GET("/v2/top-headlines/sources")
     suspend fun getSources(
         @Query("country")
