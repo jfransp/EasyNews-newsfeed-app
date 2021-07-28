@@ -14,7 +14,6 @@ import com.example.newsfeed.adapters.SourcesRecyclerViewAdapter
 import com.example.newsfeed.data.models.Source
 import com.example.newsfeed.databinding.FragmentSourcelistScreenBinding
 import com.example.newsfeed.ui.activitylevelUI.MainViewModel
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 
 class SourceListFragment : Fragment(R.layout.fragment_sourcelist_screen), SourcesRecyclerViewAdapter.OnItemClickListener {
@@ -56,6 +55,7 @@ class SourceListFragment : Fragment(R.layout.fragment_sourcelist_screen), Source
     override fun sourceItemClicked(source: Source) {
         viewModel.sourceId = source.id.toString()
         viewModel.sourceName = source.name
+        viewModel.sourceUrl = source.url
         val sourceId = viewModel.sourceId!!
         val action = SourceListFragmentDirections.actionSourceListScreenFragmentToSourceScreenFragment(sourceId)
         view?.findNavController()?.navigate(action)
@@ -64,7 +64,6 @@ class SourceListFragment : Fragment(R.layout.fragment_sourcelist_screen), Source
     override fun navigateButtonClicked(source: Source) {
         val navigateToWebIntent = Intent(Intent.ACTION_VIEW)
         val url = source.url
-        viewModel.sourceUrl = source.url
         navigateToWebIntent.data = Uri.parse(url)
         startActivity(navigateToWebIntent)
     }
