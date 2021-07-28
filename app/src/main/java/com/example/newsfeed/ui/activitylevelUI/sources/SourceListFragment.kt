@@ -64,6 +64,7 @@ class SourceListFragment : Fragment(R.layout.fragment_sourcelist_screen), Source
     override fun navigateButtonClicked(source: Source) {
         val navigateToWebIntent = Intent(Intent.ACTION_VIEW)
         val url = source.url
+        viewModel.sourceUrl = source.url
         navigateToWebIntent.data = Uri.parse(url)
         startActivity(navigateToWebIntent)
     }
